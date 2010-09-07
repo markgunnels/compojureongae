@@ -7,9 +7,10 @@
         [hiccup.page-helpers :only [doctype include-css link-to xhtml-tag]]
         [hiccup.form-helpers :only [form-to text-area text-field]])
   (:import (com.google.appengine.api.datastore Query))
-  (:require [compojure.route          :as route]
-            [appengine.datastore.core :as ds]
-            [appengine.users          :as users]))
+  (:require [compojure.response     :as response]
+            [compojure.route     :as route]
+            [appengine.datastore :as ds]
+            [appengine.users     :as users]))
 
 ;; A static HTML side bar containing some internal and external links
 (defn side-bar []
