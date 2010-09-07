@@ -6,7 +6,7 @@
                  [compojure "0.4.1"]
                  [ring/ring-servlet "0.2.5"]
                  [hiccup "0.3.0"]
-                 [appengine "0.2"]
+                 [appengine "0.4-SNAPSHOT"]
                  [com.google.appengine/appengine-api-1.0-sdk "1.3.7"]
                  [com.google.appengine/appengine-api-labs "1.3.7"]]
   :dev-dependencies [[swank-clojure "1.2.1"]

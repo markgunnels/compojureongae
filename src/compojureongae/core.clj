@@ -89,7 +89,7 @@
 
 (defn get-posts []
   "Returns all posts stored in the datastore."
-  (ds/find-all (Query. "post")))
+  (ds/select "post"))
 
 (defn main-page []
   "Renders the main page by displaying all posts."
